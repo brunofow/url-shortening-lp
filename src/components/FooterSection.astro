@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string
+  linkList: {name: string, href: string}[]
+  }
+
+  const { title, linkList } = Astro.props
+---
+
+<ul class="flex flex-col items-center">
+  <h3 class="font-bold mb-4">{title}</h3>
+    {linkList.map(link => <li>
+      <a href={link.href}>{link.name}</a>
+    </li>)}
+  </ul>
