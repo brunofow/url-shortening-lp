@@ -1,0 +1,18 @@
+---
+import Logo from './svg/Logo.astro'
+import Hamburger from './svg/Hamburger.astro'
+import MenuNavigation from './MenuNavigation.astro'
+import { Menu } from './Menu'
+---
+
+<header class="md:w-[80%] md:m-auto p-4 flex justify-between relative">
+    <div class="md:mr-10">
+    <Logo />
+    </div>
+
+    <Menu client:load >
+      <Hamburger slot="menuIcon"/>
+
+      <MenuNavigation slot="menuNavigation" />
+    </Menu>
+</header>

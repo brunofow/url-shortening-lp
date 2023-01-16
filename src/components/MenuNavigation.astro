@@ -1,0 +1,32 @@
+---
+import Link from './Link.astro'
+---
+
+<nav
+  class="font-bold bg-violet md:bg-transparent text-white md:text-gray-500 absolute md:static left-4 right-4 mt-4 md:mt-0 rounded-lg p-6 md:p-0"
+>
+  <ul class="flex flex-col md:flex-row gap-6 items-center">
+    <li>
+      <a href="#">Features</a>
+    </li>
+    <li>
+      <a href="#">Price</a>
+    </li>
+    <li>
+      <a href="#">Resources</a>
+    </li>
+
+    <hr class="w-full border-gray-500 md:hidden" />
+
+    <div class="flex flex-col items-center gap-6 md:flex-row md:ml-auto">
+      <li>
+        <a href="/login">Login</a>
+      </li>
+      <li>
+        <Link href="/signup">
+          Sign Up
+        </Link>
+      </li>
+    </div>
+  </ul>
+</nav>
