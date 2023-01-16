@@ -1,0 +1,6 @@
+export { default as Hamburger } from './Hamburger.astro'
+export { default as Logo } from './Logo.astro'
+export { default as Facebook } from './Facebook.astro'
+export { default as Instagram } from './Instagram.astro'
+export { default as Twitter } from './Twitter.astro'
+export { default as Pinterest } from './Pinterest.astro'

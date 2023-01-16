@@ -1,0 +1,34 @@
+---
+import Logo from './svg/Logo.astro'
+import FooterSection from './FooterSection.astro'
+import SocialLinks from './SocialLinks.astro'
+
+const features = [
+  { name: 'Link Shortening', href: '#' },
+  { name: 'Branded Links', href: '#' },
+  { name: 'Analytics', href: '#' }
+  ]
+
+const resources = [
+  { name: 'Blog', href: '#' },
+  { name: 'Developers', href: '#' },
+  { name: 'Support', href: '#' }
+  ]
+
+const company = [
+  { name: 'About', href: '#' },
+  { name: 'Our Team', href: '#' },
+  { name: 'Carreers', href: '#' },
+  { name: 'Contact', href: '#' }
+]
+---
+
+<footer class="bg-violet-800 text-white  w-full py-6 flex flex-col md:flex-row md:justify-evenly gap-6 items-center md:items-start">
+  <Logo color="light" />
+
+  <FooterSection linkList={features} title="Features" />
+  <FooterSection linkList={resources} title="Resources" />
+  <FooterSection linkList={company} title="Company" />
+
+  <SocialLinks />
+</footer>
