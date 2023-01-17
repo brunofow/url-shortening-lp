@@ -1,0 +1,21 @@
+---
+import Link from './Link.astro'
+import illustration from '../../public/images/illustration-working.svg'
+---
+
+<div class="w-[80%] flex flex-col xl:flex-row items-center xl:justify-around gap-4 mb-4 m-auto">
+  <img src={illustration} class="relative left-4 xl:left-[20%] xl:order-2" />
+
+  <div class="flex flex-col items-center xl:items-start gap-4 xl:order-1 text-center xl:text-start">
+    <h1 class="font-bold text-4xl xl:text-6xl">
+      More than just shorter links
+    </h1>
+
+    <p class="">
+      Build your brand's recognition and get detailed insights on how your links
+      are performing.
+    </p>
+
+    <Link href="#">Get Started</Link>
+  </div>
+</div>
