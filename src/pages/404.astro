@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Logo } from '../components/svg'
+---
+
+<Layout title="Shortly - Not Found" empty>
+<div class="w-full h-[100vh] bg-gray-500 flex flex-col items-center justify-center">
+  <Logo />
+
+  <h1>Oops... Page not found</h1>
+
+  <a href="/" class="mt-4 underline text-white">Back to homepage</a>
+</div>
+</Layout>
